@@ -1,0 +1,11 @@
+{
+  "a": "b",
+  "private": true,
+  "names": ["francis", "hanna"],
+  "escaped": "string that should be escaped",
+  "laptop": null,
+  "hello": [1, "first", "greetings", 2],
+  "version": "3.5.0",
+  "null": "val",
+  "last": "hanna\"s dog and tochi\"s cat"
+}
