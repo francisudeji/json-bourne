@@ -1,7 +1,7 @@
 import * as Bun from "bun";
 import { Lexer } from "./lexer";
 
-const FILE_PATH = "./packages.json";
+const FILE_PATH = "./data/test.json";
 
 const file = Bun.file(FILE_PATH);
 

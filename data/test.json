@@ -1,11 +1,32 @@
 {
-  "a": "b",
-  "private": true,
-  "names": ["francis", "hanna"],
-  "escaped": "string that should be escaped",
-  "laptop": null,
-  "hello": [1, "first", "greetings", 2],
-  "version": "3.5.0",
-  "null": "val",
-  "last": "hanna\"s dog and tochi\"s cat"
+  "string": "Hello, world!",
+  "empty_string": "",
+  "number_int": 42,
+  "number_negative": -99,
+  "number_float": 3.14159,
+  "number_exponent": 6.022e23,
+  "boolean_true": true,
+  "boolean_false": false,
+  "null_value": null,
+  "array_empty": [],
+  "array_mixed": [
+    "text",
+    123,
+    45.67,
+    true,
+    false,
+    null,
+    { "nested_object": "inside array" },
+    [1, 2, 3]
+  ],
+  "object_empty": {},
+  "object_nested": {
+    "level1": {
+      "level2": {
+        "string": "deep value",
+        "number": 9001
+      }
+    }
+  },
+  "special_chars": "Line1\nLine2\tTabbed \"Quoted\" \\Escaped"
 }

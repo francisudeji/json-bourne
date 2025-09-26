@@ -53,6 +53,10 @@ export class Lexer {
     return "0" <= char && char <= "9";
   }
 
+  private isValidNumber(char: string): boolean {
+    return this.isDigit(char) || char === "e" || char === "-" || char === ".";
+  }
+
   private peekChar() {
     if (this.nextCursor >= this.content.length) {
       return 0;
@@ -143,10 +147,10 @@ export class Lexer {
           } else if (literal === "null") {
             token = { kind: "TOKEN_NULL", literal };
           }
-        } else if (this.isDigit(this.char)) {
+        } else if (this.isValidNumber(this.char)) {
           const start = this.cursor;
 
-          while (this.isDigit(this.char) || this.char === ".") {
+          while (this.isValidNumber(this.char)) {
             this.chopChar();
           }
 
